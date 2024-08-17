@@ -8,8 +8,8 @@ st.set_page_config(
 )
 
 # Load company logo
-logo_url = "C:/Users/odend/OneDrive/Desktop/github/candidature/jane street"
-st.sidebar.image(logo_url, use_column_width=True)
+# logo_url = "C:/Users/odend/OneDrive/Desktop/github/candidature/jane street"
+# st.sidebar.image(logo_url, use_column_width=True)
 
 # Add navigation options
 st.sidebar.title("Navigation")
