@@ -2,7 +2,7 @@ import streamlit as st
 
 # Configure the page
 st.set_page_config(
-    page_title="My Portfolio",
+    page_title="My Jane Street Application",
     page_icon=":briefcase:",
     layout="wide",
 )
@@ -18,18 +18,19 @@ page = st.sidebar.radio("Go to", pages)
 
 # Home Page - Fit Questions
 if page == "Home":
-    st.title("Welcome to My Portfolio")
-    st.subheader("Common Fit Questions")
+    st.title("My Jane Street Application")
 
     st.markdown("""
-    ### Why should we hire you?
-    I'm a highly motivated and results-oriented individual with a strong background in [Your Field]. My experiences in [Relevant Experiences] make me an ideal fit for this role.
+    ### Why Jane Street?
+    - Research Driven
+    - Big on Technology
+    - In-House Software Building
 
-    ### What are your strengths?
-    My key strengths include [List of Strengths], which have helped me achieve [Relevant Achievements].
+    ### How I heard about Jane Street?
+    Wikipedia (https://en.wikipedia.org/wiki/OCaml)
 
-    ### What are your weaknesses?
-    While I strive for perfection, I have learned to balance this with the understanding that some projects require a practical approach to deadlines and available resources.
+    ### Why am I looking for a new position?
+    I learned a lot during my summer internship at AFD but I believe that Jane Street's research and technology oriented culture would be a perfect fit for me.
     """)
 
 # About Me Page - Additional Info
@@ -42,7 +43,7 @@ elif page == "Resume":
     st.title("My Resume")
     
     # Embed PDF of your resume
-    resume_url = "https://your-resume-url.com/resume.pdf"  # Replace with your resume URL or path
+    resume_url = "https://your-resume-url.com/resume.pdf"
     st.markdown(f"[Click here to view my resume]({resume_url})", unsafe_allow_html=True)
 
 # Contact Page - Links to GitHub and LinkedIn
@@ -51,9 +52,9 @@ elif page == "Contact":
     st.write("Feel free to reach out to me through the following channels:")
 
     # Links to GitHub and LinkedIn
-    st.markdown("[GitHub](https://github.com/your-username)")
-    st.markdown("[LinkedIn](https://www.linkedin.com/in/your-username/)")
+    st.markdown("[GitHub](https://github.com/coasensi)")
+    st.markdown("[LinkedIn](https://www.linkedin.com/in/charles-odend-hal/)")
 
 # Footer
 st.sidebar.write("---")
-st.sidebar.write("© 2024 My Portfolio")
+st.sidebar.write("© 2024 Charles")
